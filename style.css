@@ -12,7 +12,7 @@
     
     margin: 0 auto;
     background-color: #08101E ;
-    max-width: 100px;
+    max-height: 100px;
     max-width: 1146px;
     padding: 50px 0 50px 0;
     }
@@ -176,14 +176,13 @@
     border: 0;
     margin-right: 16px;
    }
-
-   
+ 
 .box {
     max-width: 1146px;
     margin: 0 auto;
     margin-top: 30px;
-   
 }
+
 .box .box__info__fruction {
     display: flex;
     flex-wrap: wrap;
@@ -498,7 +497,7 @@ margin-top: 33px;
     
 
 
-@media (min-width: 369px) and (max-width:768px) {
+@media (min-width: 369px) and (max-width: 768px) {
     .box .box__info__fruction {
         margin-left: 50px;
         margin-right: 50px;
@@ -506,53 +505,84 @@ margin-top: 33px;
        
        
 }
-@media (max-width:368px) {
-    .box .box__info__fruction {
-        margin-left: 15px;
-        margin-right: 15px; 
+@media (max-width: 320px) and (max-width: 767px) {
+    .box__1 {display: none;}
+    .heder {
+        margin: 0 auto  
     }
-    header {
-        max-width: 375px;
+    .client {
+        max-width: 746px;
+        margin: 0 auto;
+        margin-top: 96px;
         margin-left: 15px;
         margin-right: 15px;
+    }
+    header .menu__container a {
+        color: white;
+        font-size: 14px;
         font-weight: 600;
-font-size: 14px;
-line-height: 19px;
-    }
-    main {
-        min-width: 342px;
-    }
-    
-
-    main .text__rocket h5 {
-        font-weight: 600;
-font-size: 14px;
-line-height: 160%;
-text-align: center;
-text-transform: uppercase;
-min-width: 342px;
-    }
-    main .text__rocket h1 {
-        font-weight: 800;
-font-size: 28px;
-line-height: 130%;
-text-align: center;
-    } 
-    main .text__rocket p {
-        text-align: center;
-        min-width: 342px;
-    }
-    main .text__rocket .img img {
-max-width: 100%;
-min-width: 343px;
-    }
-    main .text__rocket .button__rocket{
-        min-width: 343px;
-    } 
-    .about .about__block .about__img img    {max-width: 100%;
-    min-width: 343px;
-}
-header .menu__header .menu__container .menu {
-    max-width: 26px;
-}
-}
+        }
+        header .menu__header .menu__container {
+          
+            gap: 16px;
+            }
+            header {
+                max-height: 64px;
+            }
+            .text__rocket {
+                max-width: 320px;
+                align-content: center;
+                display: flex;
+                flex-direction: column;
+            }
+            body {
+                align-content: center;   
+            }
+            .text__rocket h5 {
+                font-weight: 600;
+                font-size: 14px;
+                text-align: center;
+            }
+            main .text__rocket .text__ai h1 {
+                font-style: normal;
+                font-weight: 800;
+                font-size: 28px;
+                line-height: 130%;
+                text-align: center;
+            }
+            .text__rocket p {
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 160%;
+                text-align: center;
+            }
+            .button__rocket {
+                display: flex;
+                flex-direction: column;
+            }
+            
+            
+            main .text__rocket .img {
+               margin: 0 auto;
+            }
+            main .text__rocket .img img {
+                margin: 0 auto;
+                
+            }
+            .logo .logo__block {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 32px;
+            }
+            .logo .logo__block .logo_a {
+                margin: 0 auto;
+            }
+            body {
+                margin-left: 15px;
+                margin-right: 15px;
+            }
+            .client .text__about__client {
+                text-align: center;
+            }
+        }
